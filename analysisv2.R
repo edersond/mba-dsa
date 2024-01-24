@@ -158,5 +158,14 @@ analisa_cca(grupos_de_variaveis$rebanho, "rebanho", grupos_de_variaveis$produtiv
 analisa_cca(grupos_de_variaveis$rebanho, "rebanho", grupos_de_variaveis$leite, "leite")
 analisa_cca(grupos_de_variaveis$manejo, "manejo", grupos_de_variaveis$produtividade, "produtividade") #deu boa
 analisa_cca(grupos_de_variaveis$manejo, "manejo", grupos_de_variaveis$leite, "leite")
-analisa_cca(grupos_de_variaveis$produtividade, "produtividade", grupos_de_variaveis$leite, "leite")
+analisa_cca(grupos_de_variaveis$produtividade, "produtividade", grupos_de_variaveis$leite, "leite") 
 
+
+
+###############################################################################
+#para as variáveis com correlação significativa, volta e pega as cargas canônicas
+
+
+cca_result <- perform_cca(grupos_de_variaveis$infra, grupos_de_variaveis$rebanho)
+cca_result$xcoef
+cca_result$ycoef
