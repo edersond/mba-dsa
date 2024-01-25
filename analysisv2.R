@@ -169,3 +169,19 @@ analisa_cca(grupos_de_variaveis$produtividade, "produtividade", grupos_de_variav
 cca_result <- perform_cca(grupos_de_variaveis$infra, grupos_de_variaveis$rebanho)
 cca_result$xcoef
 cca_result$ycoef
+
+cca_result <- perform_cca(grupos_de_variaveis$infra, grupos_de_variaveis$produtividade)
+cca_result$xcoef
+cca_result$ycoef
+
+cca_result <- perform_cca(grupos_de_variaveis$rebanho, grupos_de_variaveis$manejo)
+cca_result$xcoef
+cca_result$ycoef
+
+cca_result <- perform_cca(grupos_de_variaveis$rebanho, grupos_de_variaveis$produtividade)
+cca_result$xcoef
+cca_result$ycoef
+
+cca_result <- perform_cca(grupos_de_variaveis$produtividade, grupos_de_variaveis$manejo)
+cca_result$xcoef
+cca_result$ycoef
